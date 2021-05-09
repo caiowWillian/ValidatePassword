@@ -19,7 +19,7 @@ namespace WebApi.Controllers
         {
             if(userPassword.IsValid()) return Ok();
 
-            return Unauthorized();
+            return BadRequest();
         }
     }
 }

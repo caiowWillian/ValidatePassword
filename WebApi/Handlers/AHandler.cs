@@ -11,14 +11,14 @@ namespace WebApi.Middleware
             return next;
         }
 
-        public abstract bool Check(T userPassword);
+        public abstract bool Check(T model);
 
-        protected bool CheckNext(T userPassword)
+        protected bool CheckNext(T model)
         {
             if(next == null)
                 return true;
 
-            return next.Check(userPassword);
+            return next.Check(model);
         }
     }
 }
