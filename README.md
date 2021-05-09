@@ -27,9 +27,9 @@ A api retorna status code <b>200</b> caso a senha passe por todas as regras de n
 ## Como adicionar novas regras de negocios na API.
 
 Seguindo o design pattern <a href="https://imasters.com.br/desenvolvimento/arquitetura-e-desenvolvimento-de-software-parte-14-chain-responsability">Chain of Responsability</a>, basta: 
-- desenvolver a validaçao no dominio /WebApi/Model/UserPassword.cs
-- Criar um novo handler em WebApi/Handlers/Password
-- Criar o elo na corrente de validação em /WebApi/Model/UserPassword.cs
+- desenvolver a validaçao no dominio <a href="https://github.com/caiowWillian/ValidatePassword/blob/main/WebApi/Model/UserPassword.cs">/WebApi/Model/UserPassword.cs</a>
+- Criar um novo handler em <a href="https://github.com/caiowWillian/ValidatePassword/tree/main/WebApi/Handlers/Password">WebApi/Handlers/Password</a>
+- Criar o elo na corrente de validação em <a href="https://github.com/caiowWillian/ValidatePassword/blob/main/WebApi/Model/UserPassword.cs">/WebApi/Model/UserPassword.cs</a>
 ```c#
         public bool IsValid()
         {
