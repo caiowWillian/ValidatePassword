@@ -40,7 +40,7 @@ namespace Test
             var request = new HttpRequestMessage(new HttpMethod("POST"),"/Password");
             request.Content = BuildPasswordJson(pass);
             var response = await _client.SendAsync(request);
-            Assert.Equal(HttpStatusCode.Unauthorized,response.StatusCode);
+            Assert.Equal(HttpStatusCode.BadRequest,response.StatusCode);
         }
 
         private StringContent BuildPasswordJson(string pass)
