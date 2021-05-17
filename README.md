@@ -46,4 +46,4 @@ Seguindo o design pattern <a href="https://imasters.com.br/desenvolvimento/arqui
 ```
 
 ## Uso do Chain of responsability
-Esse problema poderia ser facilmente resolvido com uma <a href="https://www.computerhope.com/jargon/r/regex.htm">Regex</a>, a escolha do chain of responsability visa a facilidade de adicionar novas regras de negocio no futuro sem afetar as regras já existentes.
+Esse problema poderia ser facilmente resolvido com uma <a href="https://www.computerhope.com/jargon/r/regex.htm">Regex</a>, a escolha do chain of responsability visa a facilidade de adicionar novas regras de negocio no futuro sem precisar retestar as regras já existentes.
