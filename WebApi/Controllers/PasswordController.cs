@@ -12,7 +12,6 @@ namespace WebApi.Controllers
 
         public PasswordController(ILogger<PasswordController> logger)
         {
-            _logger = logger;
         }
 
         [HttpPost]
